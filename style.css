@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    margin-left: 200px;
+    margin-top: 20px;
+    background-color: #FFE8F0;
+    background-image: url(images/background.gif);
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h3 {
+    color: #F197B3;
+    text-decoration: underline;
+}
+h2{
+    color: #FFA7C6;
+    text-shadow: 3px 1px 4px #000000;
+    font-style: italic;
+}
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/anime/ani-1/ani195.ani), url(https://cur.cursors-4u.net/anime/ani-1/ani195.png), auto !important;} /* End https://www.cursors-4u.com */
+.pictures {
+	color: #FF8AB3;
+	font-size: large;
+}
+.container-fluid {
+	/* [disabled]background-color: #FFB7B8; */
+}
+.container-fluid .container .navbar.navbar-expand-lg.navbar-light.bg-light {
+	background-color: #FFFFFF;
+	background-image: -webkit-linear-gradient(270deg,rgba(255,198,218,1.00) 0%,rgba(250,218,225,1.00) 100%,rgba(249,229,229,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,198,218,1.00) 0%,rgba(250,218,225,1.00) 100%,rgba(249,229,229,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,198,218,1.00) 0%,rgba(250,218,225,1.00) 100%,rgba(249,229,229,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,198,218,1.00) 0%,rgba(250,218,225,1.00) 100%,rgba(249,229,229,1.00) 100%);
+}
+body {
+}
+.text-center {
+}
+.text-center {
+	color: #FF96BB;
+}
+.card-body .card-title em {
+}
+.card #headingThree1 .mb-0 {
+}
+.card.col-md-4.col-lg-12 .card-body .btn.btn-primary {
+	background-color: #FFD7E5;
+}
+#headingThree1 .mb-0 .collapsed.blue {
+	color: #FFA1A3;
+}
+#headingTwo1 .mb-0 .collapsed.blue {
+	color: #FFA1A3;
+}
+#headingOne1 .mb-0 .blue {
+	color: #FFA1A3;
+}

@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Project 9 Form</title>
+<style type="text/css">
+body {
+    background-image: url(images/bkgrd.jpg);
+}
+</style>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('images/btn_about_down.jpg','images/btn_characters_down.jpg','images/btn_merch_down.jpg','images/btn_home_down.jpg')">
+<table width="835" border="0" align="center" cellpadding="0" cellspacing="4">
+  <tbody>
+    <tr>
+      <td colspan="4" align="center"><img src="images/banner_formpage_colormatched.jpg" width="894" height="285" alt=""/></td>
+    </tr>
+    <tr>
+      <td width="211" align="center" valign="middle" bgcolor="#FFFFFF"><a href="index.html"><img src="images/btn_home_up.jpg" alt="" width="200" height="76" id="btn_home" onMouseOver="MM_swapImage('btn_home','','images/btn_home_down.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td width="205" align="center" valign="middle" bgcolor="#FFFFFF"><a href="about.html"><img src="images/btn_about_up.jpg" alt="" width="200" height="76" id="btn_about" onMouseOver="MM_swapImage('btn_about','','images/btn_about_down.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td width="204" align="center" valign="middle" bgcolor="#FFFFFF"><a href="characters.html"><img src="images/btn_characters_up.jpg" alt="" width="200" height="76" id="btn_characters" onMouseOver="MM_swapImage('btn_characters','','images/btn_characters_down.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td width="200" align="center" valign="middle" bgcolor="#FFFFFF"><img src="images/btn_merch_up.jpg" alt="" width="200" height="76" id="btn_merch" onMouseOver="MM_swapImage('btn_merch','','images/btn_merch_down.jpg',1)" onMouseOut="MM_swapImgRestore()"/></td>
+    </tr>
+  </tbody>
+</table>
+<form id="form1" name="form1" method="post">
+  <table width="900" border="0" align="center" cellpadding="0" cellspacing="4">
+    <tbody>
+      <tr>
+        <td width="73">First Name</td>
+        <td width="645"><input name="firstname" type="text" required="required" id="firstname" size="50" maxlength="50"></td>
+        <td width="166">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td><input name="lastname" type="text" required="required" id="lastname" size="50" maxlength="50"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><input name="address" type="text" id="address" size="50" maxlength="50"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td><input name="city" type="text" id="city" size="35" maxlength="30"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>State</td>
+        <td><input name="textfield5" type="text" id="textfield5" value="Michigan"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Zip</td>
+        <td><input name="zip" type="text" required="required" id="zip" onBlur="MM_validateForm('firstname','','R','lastname','','R','address','','R','city','','R','zip','','NisNum');return document.MM_returnValue" maxlength="5"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td><input name="email" type="email" id="email" size="50" maxlength="50"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td rowspan="2" bgcolor="#FFCADD">Favorite Sanrio Character: (check all that apply)
+          <p>
+            <label>
+              <input type="checkbox" name="Sanrio" value="hellokitty" id="Sanrio_0">
+            Hello Kitty</label>
+            <label>
+              <input type="checkbox" name="Sanrio_" value="mymelody" id="Sanrio_1">
+            My Melody</label>
+            <label>
+              <input type="checkbox" name="Sanrio_2" value="kuromi" id="Sanrio_2">
+            Kuromi</label>
+            <label>
+              <input type="checkbox" name="Sanrio_3" value="cinnamoroll" id="Sanrio_3">
+            Cinnamoroll</label>
+            <br>
+        </p></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td rowspan="2" bgcolor="#FFE3E7">Subscribe to our Newsletter Email?
+          <p>
+            <label>
+              <input name="yesno" type="radio" id="yesno_0" title="yes" value="yes">
+            Yes</label>
+            <label>
+              <input name="yesno" type="radio" id="yesno_1" title="no" value="no">
+            No</label>
+  <br>
+            <br>
+        </p></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>Tell us why you chose your favorite character (200 words or less)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><textarea name="Why" maxlength="200" id="Why"></textarea></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><label for="like scale">How much do you like sanrio? </label>
+          <input name="like scale" type="range" id="like scale" max="10" min="1" step="1">
+          <label for="date"><br>
+          When would you like us to send an email? </label> 
+          <input name="date" type="date" id="date" max="2030-01-01" min="2022-01-01" title="date" value="2022-01-01"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><label for="select">Favorite Female  Character:</label>
+          <select name="select" id="select">
+            <option value="Hello Kitty" selected="selected">Hello Kitty</option>
+            <option value="My Melody">My Melody</option>
+            <option value="Kuromi">Kuromi</option>
+            <option value="lala">Lala</option>
+            <option value="Sugar Bunny">Sugar Bunny</option>
+          </select>
+          <label for="select2">Favorite Male Character:</label>
+          <select name="select2" id="select2">
+            <option value="cinnamoroll">Cinnamoroll</option>
+            <option value="pompom">Pompompourin</option>
+            <option value="dan">Dear Daniel</option>
+            <option value="kiki">Kiki</option>
+            <option value="Batz Maru">Batz Maru</option>
+            <option value="chococat">Chococat</option>
+        </select></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><input type="submit" name="submit" id="submit" value="Submit">
+        <input type="reset" name="reset2" id="reset2" value="Reset"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td align="center"><p><img src="images/kittycatdance.gif" width="200" height="200" alt=""/></p>
+        <p>&copy; Anela Hasa 2022</p></td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>
